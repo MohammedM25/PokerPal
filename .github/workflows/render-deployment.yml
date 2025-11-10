@@ -35,10 +35,12 @@ jobs:
                   state: 'success',
                   environment: 'production',
                   environment_url: 'https://pokerpal.onrender.com',
-                  description: 'Deployed to Render'
+                  log_url: 'https://pokerpal.onrender.com',
+                  description: 'Deployed to Render - https://pokerpal.onrender.com'
                 });
                 
                 console.log('Deployment created successfully:', deployment.data.id);
+                console.log('Deployment URL: https://pokerpal.onrender.com');
               }
             } catch (error) {
               console.error('Deployment error:', error);
