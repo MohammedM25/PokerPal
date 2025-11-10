@@ -40,6 +40,8 @@ yarn-error.log*
 # Build outputs
 frontend/dist/
 frontend/build/
+dist/
+assets/
 *.tgz
 *.tar.gz
 
@@ -53,3 +55,6 @@ frontend/build/
 # Temporary files
 *.tmp
 *.temp
+
+# Personal files
+resume.tex

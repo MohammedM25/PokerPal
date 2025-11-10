@@ -8,8 +8,8 @@
     "dev": "cd frontend && npm run dev",
     "build": "cd frontend && npm run build",
     "install-frontend": "cd frontend && npm install",
-    "install-backend": "pip install treys",
-    "install-all": "npm run install-backend && npm run install-frontend",
+    "install-backend": "pip install -r requirements.txt",
+    "install-all": "pip install -r requirements.txt && cd frontend && npm install",
     "serve": "python3 app.py & cd frontend && npm run dev"
   },
   "keywords": [
@@ -32,7 +32,6 @@
   "bugs": {
     "url": "https://github.com/MohammedMohammed1025/PokerPal/issues"
   },
-  "homepage": "https://pokerpal.up.railway.app",
   "engines": {
     "node": ">=18.0.0",
     "python": ">=3.12.0"

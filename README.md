@@ -88,9 +88,9 @@ A poker analysis tool I built to combine my love for poker with my CompE coursew
    Navigate to `http://localhost:5173`
 
 ### 🌐 Live Demo
-**Full Application**: [https://pokerpal.up.railway.app](https://pokerpal.up.railway.app)
+**Full Application**: Coming soon (deploying to Render)
 
-> **Note**: The live demo includes full functionality with real poker calculations powered by the Flask backend.
+> **Note**: The live demo will include full functionality with real poker calculations powered by the Flask backend.
 
 ## 📁 Project Structure
 
@@ -109,8 +109,9 @@ PokerPal/
 │   └── vite.config.ts
 ├── backend/
 │   └── pokersim.py            # Python poker calculations
-├── app.py                     # Flask server (18 lines, clean & simple)
-├── requirements.txt           # Python dependencies (treys, flask, flask-cors)
+├── app.py                     # Flask server
+├── requirements.txt           # Python dependencies
+├── render.yaml                # Render deployment configuration
 └── README.md
 ```
 
@@ -143,6 +144,21 @@ PokerPal/
 3. Take the interactive quiz to test your knowledge
 4. Learn poker fundamentals at your own pace
 
+## 🚀 Deployment
+
+This project is configured for deployment on Render. The `render.yaml` file contains the deployment configuration.
+
+### Deploy to Render
+
+1. Push your code to GitHub
+2. Connect your repository to Render
+3. Render will automatically:
+   - Install Node.js dependencies and build the React frontend
+   - Install Python dependencies
+   - Start the Flask server with Gunicorn
+
+The build process creates a `dist/` folder with the compiled React app, which Flask serves as static files.
+
 ## 🚧 Challenges & Lessons Learned
 
 Building PokerPal taught me a lot about full-stack development. The biggest challenge was getting the Python `treys` library to work smoothly with React - I had to create a Flask server to bridge them since you can't run Python directly in the browser.
@@ -157,7 +173,7 @@ This project was a great way to practice full-stack development. I got to work w
 
 The Monte Carlo simulations were probably the coolest part - watching it run thousands of poker hands to calculate accurate odds was pretty satisfying. Also learned a ton about state management in React, especially when dealing with real-time updates.
 
-Deploying to Railway taught me about production deployments and how to handle environment variables and static file serving in Flask.
+Deploying to Render taught me about production deployments, environment variables, static file serving in Flask, and using Gunicorn as a production WSGI server.
 
 ## 🤝 Contributing
 
