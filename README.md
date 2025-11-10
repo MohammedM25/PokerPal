@@ -161,19 +161,21 @@ The build process creates a `dist/` folder with the compiled React app, which Fl
 
 ## 🚧 Challenges & Lessons Learned
 
-Building PokerPal taught me a lot about full-stack development. The biggest challenge was getting the Python `treys` library to work smoothly with React - I had to create a Flask server to bridge them since you can't run Python directly in the browser.
+Building PokerPal provided valuable experience in full-stack development. The primary technical challenge was integrating the Python `treys` library with React, which required creating a Flask API server to bridge the gap between Python's poker evaluation capabilities and the browser-based frontend.
 
-I also spent way too much time debugging duplicate card issues in the simulations. Turns out keeping track of used cards across different game phases is trickier than it looks!
+Implementing the Monte Carlo simulation engine required careful state management to track used cards across different game phases (preflop, flop, turn, river), ensuring no duplicate cards were dealt during simulations.
 
-The most rewarding part was seeing the Monte Carlo simulations actually work. Running 1000+ iterations to get accurate odds felt like magic the first time it worked.
+The most rewarding aspect was successfully implementing the Monte Carlo simulation engine, which processes 1000+ iterations to calculate accurate win probabilities in real-time.
 
 ## 🎯 What I Learned
 
-This project was a great way to practice full-stack development. I got to work with React and TypeScript on the frontend, Python for the heavy math stuff, and learned how to connect them with Flask.
+This project provided hands-on experience with full-stack development, combining React and TypeScript for the frontend with Python for computational logic, connected via a Flask REST API.
 
-The Monte Carlo simulations were probably the coolest part - watching it run thousands of poker hands to calculate accurate odds was pretty satisfying. Also learned a ton about state management in React, especially when dealing with real-time updates.
-
-Deploying to Render taught me about production deployments, environment variables, static file serving in Flask, and using Gunicorn as a production WSGI server.
+Key technical skills developed:
+- **Frontend**: React state management, TypeScript type safety, and real-time UI updates
+- **Backend**: Flask API design, Python subprocess management, and Monte Carlo algorithm implementation
+- **DevOps**: Production deployment with Render, static file serving, and WSGI server configuration with Gunicorn
+- **Architecture**: Designing a clean separation between frontend and backend, with proper error handling and API design
 
 ## 🤝 Contributing
 
