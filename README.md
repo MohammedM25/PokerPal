@@ -88,9 +88,9 @@ A poker analysis tool I built to combine my love for poker with my CompE coursew
    Navigate to `http://localhost:5173`
 
 ### 🌐 Live Demo
-**Full Application**: Coming soon (deploying to Render)
+**Full Application**: [https://pokerpal.onrender.com/](https://pokerpal.onrender.com/)
 
-> **Note**: The live demo will include full functionality with real poker calculations powered by the Flask backend.
+> **Note**: The live demo includes full functionality with real poker calculations powered by the Flask backend.
 
 ## 📁 Project Structure
 
